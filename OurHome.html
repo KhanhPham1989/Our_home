@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>OurHome</title>
+  </head>
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 1000ms ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.4s ease-in 1s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+  </style>
+  <body>
+    <div class="container">
+      <div class="panel active" style="background-image: url('https://lh3.googleusercontent.com/cpNlV2BCaB6tI46j6yhp0nGXzC0ApbBVQQKF_vN_ccP4w4-bbxyf9Fv0GfGNdL2FHhu6IscAHOZVA5d2ViKsqU0JqxrdCOnP-R3IhyvDEp_8cIru2F9fiL8gQmcvch9PZOfyGNERKzCQbq8rTVd9hPKH4BhsDDEwyDYVuGTdgfHuoYr4mrq28NbCH02yY7EAtGt1aivNAZXjqHuWo2XLPFcN_R1RzfSv66W7mJH3VtixRqmP-2Hd5YxQVDoVGmvdj0h8x2o05lNtwnct8WmL8vvK7-MdD6-s6DC6tmBED1gsUeeKGMKagau71mWSFWOl6-Nh0QsoDPlbnELs0SDzm05gC8pzDKOLFclge5SirRwYPqkP-7UsRQ5mBhLKE6hc6vceb8iVHSslAuqaEILlYTT9aQEnpFj9BpGCK6OsK0LwRQvdxgjrrs8ApF0tSF7Xmhlg2ZJNfLLwVlPlOOJhe0ZXNmLSvfjQCBGpJKEQFjFq-jlfVi2qIEWDZrCFxV6t9JF0ebNL25_hJPy1sh7-7dRiJXhc2H0APrneXtNZSWtYYC898V91xRHKSqA2oCUGdy8GkpeVD20Fa7SuqawdvOhqIh8y6amF6pkUd_gLVE9oM9U3yYboOPp-MfqR-ngcy3wZ6mWv7HxjrH6zZfooYb_cVgWJD9eMxxE9D-F7BF1Y8U_yim3goiwiCZBjc0YOtDs1YLe01yQ0-GABTP7PfeJP=w1286-h625-no?authuser=0')">
+        <h3>About us - Image</h3>
+      </div>
+      <div class="panel" style="background-image: url('https://lh3.googleusercontent.com/nRSorFjKMWP-WvbCmv709AW88IpKlQ7M5u6grtenOScNLdWytmU6MFYtHBYU3Y88EnBLylJ8TTZnsWU2gSAlLX_sPL58wb4pyAXSTA7nSmrjPDbFgb2VRtC6YKXiIzNPQQIfPqXmTHx_xgJTJWKuxqxc7khk4uLKC93KPwPMd-F7fyI3ndF2Jn_M44A_V6VZtNye6JM3yAMjR---TFIwTUSxQfiZRwNHNox1YCpploe1vYXQZ4hwbp0inUs4IKuLZ75ZHDPWwm5RiajfB4q_PP3DeOLjAgFmkekEFdqRkmAA4hCe4PX_bWjgYRB8sFNO5BoLDD8vjgLjdozEQq8tOKbdubSYTB2w4Rm9KtPnE9kgT59AYcTDwYYDbvbyo7oC5V9smFbL4EE5_SLnewis9MPPQLEk_5ua7JcOfpngcZoQQCGg1DiwbdrcgiCZP5uFR1jCu7ZSs7cDab54K4w5d09V3TkTlu5LlTE4GKsuY0vryCkI8r7arfDVT4pYIGmnsTMg_qazxZmq_gjgrsHxXk2HZTp1IpJxTCxwpiYxvZ1B1Ew-_bgBCMESbKyIaDENZ00gkTDFC3pm5u2BZBvx5ecddt_wiZN-b-nDR4iHWsLkPIQYsok-pzDs1LBhrUhjl1ytFvDs867cISPNyi55OWMqDOeyt_-XknWw1tbYsNYkx6K5cezH0kx00J4lApAe0MCHbXV_dy64NtedH2uNA5MFnw=w348-h196-k-no?authuser=0')">
+        <h3> 
+          <a href="./OurClip.html">About us - Clip </a>
+        </h3>
+      </div>
+      <div class="panel" style="background-image: url('https://lh3.googleusercontent.com/ilEVvSPAgy2nRhXU9PXkomyVu3ds0DAnIZfBIQb_OdjmASO4uCxxWgkzm-erP6aRYGrKYjCukklbkV-b1ecfpBuTPgEf_zNflYkq2l12Af-gLv7Xoy8GvU7HW4qz-PCMkg9mRGUm_ggxEDZXFOu4KSKqV5Hulfk-7hr8wSMJAwqkUW9sfcgCUZ7sIMAP821fThPmF7nPaDf_uYxbOhXlhXffrjHANFVr_YrjGhgRiN4rAIM-NTWAeMHj2Uivd6fQRh_PtVVxATcAqLwzkEPDOi4yiYbPVAYHf_RHTqrvGxGqVZ57LIeSS4J0AsS8MlWHbRuNegMnQmQ0kRq81vfnhFRweDGddFo_BiChjE6ZYozhYHSUhOfJ4k4qn9-C0UeRT7aNV6-G9wOUJBbUCqmwfIy8pMm4fFpBaU6T4u4wAt6wFlPJdWW8due0WdFNzz1crTjrytAf8ec7J_UVSGOiq8s4g7xceH3-XYCySvN1y28irXn3bV2IXCeMRj15jisFYVLPz_O44NQzeuwXCyQ42jx5uLrdrUITp0lxIQpRZTWX7-qoy-iRvkVoUNJ0iIBDIj-b5C8Bx8ZjnvyfWiOpLNP3thPCtEgdosSHG4EXHDHLnJew5Rh-vUyFhMVSsdjQ_p-qt7DsP8KckxsQLarzU5elEcwRWsgqZTA14_m3jhcRmC8li1C4Ow9HYDOlvXULTP9KcvoERNh3kfkn-Z82ehJF=w1321-h625-no?authuser=0')">
+        <h3>About us - Working</h3>
+      </div>
+      <div class="panel" style="background-image: url('https://lh3.googleusercontent.com/_Np2L4pPc6daXMqSfhoJOisP12sAh6RFLG6jSFZgcAcHh0KXcTlhLlNXJj4i82DBI1Zj6axPJoGVktf5DR_i2Hn7P5X8GHFijFom3R3GdwhniIJ7Y8v0b4RClVHTe7EOu4qugHPGu9WYy4KStw0p4XwRsCLrDKKI_uqeyxeu5HJRfmoKyvzmJcJ6Q18xq3QUnpRxKX7SHiL-wnV6p6J0dn5QCMuSEbQ2bUtd4-xhC8Fq9oRt4FoZKAgiEPXsjjt1EC5SfYSyCOnG9znziCF50yq-SvdsN26I9TKsdTfOeLwAjKD_4T94-qOJRKpyFD3240YB6sZyZKd9qmX5ch1ONgD5gxTon6SWdG6Bocbm9YgDcF1HTtCpyNW83xn9nUw__QPlNa7tb2cWZFOs2dnkim9Miv4Gn0tsKAS9BJ_kRQOt_MqDvq9U-71aS1yGa3hZzOqsICBlBZ0cXsxDHHjvSBzS4BEwYjJkmFshM8Z9NVWKIlZD8AkWUJBnbnJUePmfNEA9ZCNis2f-aBerKBP9PcTQIIAjdTcbMGCN4gQDKxpMjLcy9qqyiiN12LV0NlJtrMFin2_rT9aX_Vvz4b30KZnqYQf5oJqptCg-cQTTVyT2z1g9egPd0s_16wLSwvtapfh5dJjhfvXWUdN8vGDLLFKe7KLMB2jrbUXAUD7mnMWbODmAiICBdypjEHZIlxj9fOezKUnLUjjpwjK_MFzIVHS1-A=w524-h248-no?authuser=0')">
+        <h3>About us - Details</h3>
+      </div>
+      <div class="panel" style="background-image: url('https://th.bing.com/th/id/R.6ee994e18b2ca4a53e3be0bf740d525a?rik=fNjs9wOIHATAcA&pid=ImgRaw&r=0')">
+        <h3>Want to join us ?</h3>
+      </div>
+
+    </div>
+
+    <script>
+        const panels = document.querySelectorAll('.panel')
+
+panels.forEach( function (panel) {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add('active')
+    })
+})
+
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+    })
+}
+    </script>
+  </body>
+</html>
