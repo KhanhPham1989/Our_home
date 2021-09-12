@@ -101,6 +101,12 @@ const app = {
         path: './CLIP/Trân.mp4',
         image: './CLIP/UP-Yingshu.jpg' ,
       }, 
+      {
+        name: '2B House - About Vân',
+        singer: 'All',
+        path: './CLIP/Vân.mp4',
+        image: './CLIP/UP-Yingshu.jpg' ,
+      }, 
   ],
   setConfig: function(key, value) {
       this.config(key) = value;
