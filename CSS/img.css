@@ -19,16 +19,19 @@ h1 {
   margin: 10px;
 }
 .box1 {
-   background-color: red;
+ 
    display: flex;
+   align-items: center;
    justify-content: space-evenly;
 }
-.box1 .box {
-    background-image: url(/CLIP/6.jpg);
+/* .box1 .box {
+  display: flex;
+  justify-content:space-evenly;
+    background-image: url(/IMG/11.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 .box {
   background-color: steelblue;
   color: #fff;
