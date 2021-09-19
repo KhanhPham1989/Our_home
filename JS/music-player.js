@@ -139,21 +139,9 @@ const app = {
         image: './CLIP/2BB.jpg' ,
       }, 
       {
-        name: '2B House - Khéo tay hay làm 1',
+        name: '2B House - Khéo tay hay làm ',
         singer: 'All',
-        path: './CLIP/clip2.1.mp4',
-        image: './CLIP/2BB.jpg' ,
-      }, 
-      {
-        name: '2B House - Khéo tay hay làm 3',
-        singer: 'All',
-        path: './CLIP/clip 3.mp4',
-        image: './CLIP/2BB.jpg' ,
-      }, 
-      {
-        name: '2B House - Khéo tay hay làm 3',
-        singer: 'All',
-        path: './CLIP/clip2.mp4',
+        path: './CLIP/Yingshu.mp4',
         image: './CLIP/2BB.jpg' ,
       }, 
       {
