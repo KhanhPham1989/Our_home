@@ -1,10 +1,11 @@
-$ = document.querySelector.bind(document);
-$$ = document.querySelectorAll.bind(document);
+// $ = document.querySelector.bind(document);
+// $$ = document.querySelectorAll.bind(document);
 const boxes = document.querySelectorAll('.box');
+let data = [];
+let itemsPerPage = 24;
+let page = 1;
 const app = {
     currentIndex : 0, // lay ra chi muc dau tien cua mang
-   
-
     images : [
       {
         id : 'a0',
@@ -28,14 +29,18 @@ const app = {
       },
     ],
 
-render: function() {
-    const htmls = this.images.map ((images, id) => {
-        return `
-            <div class="box1"  data-index="${id}" style="background-image: url('${images.image}')"></div>
-           
-        `
-  })
- boxes.innerHTML = htmls.join('')
+render: function displayImages(app, page) {
+  let s = ``;
+  let startItem = (page - 1) * itemsPerPage; 
+  let stopItem = startItem + itemsPerPage;
+
+  for (let i = startItem; i < stopItem; i++) {
+      s += `<div class="box1" data-id="${app[i].id}">
+              <img src="./IMG/${app[i].image}" alt="" class="image">
+          </div> `;
+  };
+  // document.querySelector(".box").innerHTML = html.join(s);
+  console.log(s);
 },
 
 show : function checkBoxes() {
@@ -57,7 +62,7 @@ start : function() {
     this.show()
     
     // Render playlist
-      this.render()
+    this.render()
   }
 };
 

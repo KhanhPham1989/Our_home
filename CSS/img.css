@@ -24,14 +24,14 @@ h1 {
    align-items: center;
    justify-content: space-evenly;
 }
-/* .box1 .box {
+.box .box1  {
   display: flex;
   justify-content:space-evenly;
-    background-image: url(/IMG/11.jpg);
+    background-image: url('/IMG/11.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-} */
+}
 .box {
   background-color: steelblue;
   color: #fff;
